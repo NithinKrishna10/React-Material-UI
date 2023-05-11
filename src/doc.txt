@@ -1,0 +1,84 @@
+Typography:
+    >Typography is used to add text on the webpage.
+    >Different type of text based tags like Heading tags, Pararaph, etc.
+
+    Properties:
+        >Variant(variant) : Used to define html tag
+        >Additional CSS Properties(sx): Like fontWeight,margin,etc.
+
+Button:
+    >Used to add Button into the webpage
+    >Different pre-defined styles available.
+
+    Properties:
+        >Variant(variant): Styles like outlined,etc.
+        >Additional Properties: Like onClick,type,sx,etc>
+
+Textfield:
+    >Used in forms to add input
+    >Has more like props like styles as compared to html <input/>
+
+Checkbox:
+    >Used in forms to check options
+    
+    Properties:
+        >DefaultChecked: For By Default Checked
+        >Additional Properties : Like onChange,disabled,sx,etc.
+
+Select:
+    >Used as dropdowns.
+    >Uses a Menu List to Select a dropdowns
+
+    Properties:
+        >DefaultValue: For By Default Select Item
+        >Like onChange,disabled,sx,etc.
+
+AppBar:
+    >AppBar display content on top of the screen.
+    >It is used to buil navigation bart with Material UI
+
+    Properties:
+        >Position: FOr Navbar Position
+        >Additional Properties : Like colors,sx,etc.
+
+Toolbar:
+    >Toolbar provides a structure for adding elements.
+
+    Properties:
+        >Flex Properties: For display
+        >Additional Properties: Like color,sx,etc.
+
+Menu:
+    >Menu is used to display list of choices to select.
+    >It has MenuItem component to add list item.
+
+    Properties:
+        >AchorEl: To set anchor position(target tag)
+        >Additional Properties: Like open,onCloses,sx,etc.
+    
+Tabs:
+    >Helps to switch between different views and navigations.
+    >The Tabs is a container of child <Tabs/> component.
+
+    Properties:
+        >Value,onChange: To set Active Tabs
+        >Additional Properties: Like indicatiorColor,textColor,etc.
+
+Card:
+    >A surface that displays content and actions on single topic.
+    >Can be Images,Text,Heading,Action like Blog Post.
+    >Have multiple components to complete a Card.
+
+    Properties:
+        >MaxWidth:To define maximum width.
+        >Additional Properties: Like sx,classes,etc.
+
+
+Dialog:
+    >Dialog is a popup window which informs something to user.
+    >Has backdrop feature which blurs the background when it's open.
+
+    Properties:
+        >Open,onClose: To open and close dialog.
+        >Additional Properties: Like hideBackdrip,transition etc.
+        
