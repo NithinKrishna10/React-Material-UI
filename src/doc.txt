@@ -81,4 +81,45 @@ Dialog:
     Properties:
         >Open,onClose: To open and close dialog.
         >Additional Properties: Like hideBackdrip,transition etc.
-        
+
+Modal:
+    >Modal is a popup window that can be shown to the user
+    >Has backdrop feature which blurs the background when it's open.
+
+    Properties:
+        >Open,onClose: To open and close dialog.
+        >Additional Properties: Like hideBackdrip,transition etc.
+
+Modal vs Dialog:
+
+    >The Dialog box covers everything that the Modal has but they have different Use-Cases:
+        >Dialog: To get a confirmation message or permission which can be skipped.
+        >Modal: The Modal requires an aciton to be completed and it can't be skipped
+
+
+List:
+    >Group of elements
+    >Have child elements like <ListItem/> to add item to the list
+
+    Properties:
+        >Divider: To add a horizontal line 
+        >Additional Properties: Like component,sx ,etc.
+
+Autocomplete:
+    >Dropdown which works on search feature.
+    >Options and TextField needs to be provided to handle search operations
+
+    Properties:
+        >Options,renderInput: To add otions in list, to handle input search.
+        >Additional Properties : Like sx etc.
+
+
+Grid System:
+    >Allows to use the grid layout
+
+Container And Items:
+    >The container is parent Grid and Items are rendered inside that Grid os a child
+
+Breakpoints:
+    >Used for responsive layout across different screen sizes
+    

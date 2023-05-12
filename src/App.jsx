@@ -1,36 +1,27 @@
-import { useState } from 'react'
-import Test from './Test'
-import NavApp from './components/NavApp'
-import MenuDemo from './components/MenuDemo'
-import TabsDemo from './components/TabsDemo'
-import CardDemo from './components/CardDemo'
-import { Box } from '@mui/material'
+import { useState } from "react";
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TestPage from "./pages/TestPage";
+import Layout from "./Layout";
+import Navbar from "./components/Navbar";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const linksArray = ["Products","Services","About","Contact Us"]
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <NavApp/>
-      <br />
-      <br />
-      <Test/>
-
-      <br />
-      <MenuDemo/>
-
-      <br />
-
-      <TabsDemo/>
-      <br />
-
-<Box sx={{display:'flex' , margin:'5px'}}>
-
-      <CardDemo/> <CardDemo/>
-</Box>
-
+      <Navbar links={linksArray}/>
+            <BrowserRouter>
+        <Routes>
+          <Route path="/test" element={<TestPage/>} />
+          <Route path="/" element={<Layout/>} />
+        
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
