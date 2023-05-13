@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TestPage from "./pages/TestPage";
 import Layout from "./Layout";
 import Navbar from "./components/Navbar";
+import ThemeDemo from "./components/ThemeDemo";
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
         <Routes>
           <Route path="/test" element={<TestPage/>} />
           <Route path="/" element={<Layout/>} />
-        
+          <Route path="/theme" element={<ThemeDemo/>} />
+
         </Routes>
       </BrowserRouter>
     </div>

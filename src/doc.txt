@@ -122,4 +122,53 @@ Container And Items:
 
 Breakpoints:
     >Used for responsive layout across different screen sizes
-    
+
+
+ImageList:
+    >Used to display collection of images in a group
+    >Have child components to add layout
+
+    Properties:
+        >Variant,cols: To add styles and columns in group
+        >Additional Properties: Like gap,sx,etc.
+
+DataGrid:
+    >Used to add Table with bunch of advance properties to add.
+    >Fully custmizable
+
+    Properties:
+        >Row,cols: To add rows and columns fields.
+        >Like pagination,loading,etc.
+
+Icons:
+    >Used to display SVG icon itno the webpage.
+    >Can have IconButton for Button effect inside icon
+
+    Properties:
+        >Color,size: To add colors and sizes
+        >Additional: Like,sx,etc.
+
+
+IconButton:
+    >Used for icons to add a Button Effect in Icons
+    >Supports all button properties.
+
+    Properties:
+        >OnClick: To add events, and colors.
+        >Additional Properties: Like sx,etc.
+
+ThemeProvider:
+    >Used to modify current theme.
+    >Chile components need to be wrapped inside it.
+    >You can aceess current theme by useTheme().
+
+    Properties:
+        >Theme: To refer modified theme
+
+
+Styled Components(styled):
+    >Used to add pre-defined styles to a component
+    >Components still accepts all value to be applied
+
+    Properties:
+        >All: All properties are available
